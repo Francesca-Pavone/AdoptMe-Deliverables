@@ -1,0 +1,86 @@
+{
+  "id": "1da29891-0c50-445c-bfa6-013846ec22e6",
+  "version": "2.0",
+  "name": "TestSelenium",
+  "url": "https://convertlive.com",
+  "tests": [{
+    "id": "a23533fb-fb66-4021-a54f-ff3fdc2ec722",
+    "name": "TestSelenium",
+    "commands": [{
+      "id": "88635de6-f82f-4332-bd65-65c3a3462227",
+      "comment": "",
+      "command": "open",
+      "target": "/it/u/convertire/metri/a/centimetri",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e806408-db46-4529-b349-0ea2de2ac909",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1060x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49d939c1-85f9-480b-a600-56027ae27ab4",
+      "comment": "",
+      "command": "click",
+      "target": "id=convert-value",
+      "targets": [
+        ["id=convert-value", "id"],
+        ["css=#convert-value", "css:finder"],
+        ["xpath=//input[@id='convert-value']", "xpath:attributes"],
+        ["xpath=//form[@id='converter']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd22ae64-42d4-4793-bbea-f3fb2a184760",
+      "comment": "",
+      "command": "type",
+      "target": "id=convert-value",
+      "targets": [
+        ["id=convert-value", "id"],
+        ["css=#convert-value", "css:finder"],
+        ["xpath=//input[@id='convert-value']", "xpath:attributes"],
+        ["xpath=//form[@id='converter']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "8aa5e41b-bfd4-4467-918e-b507a442f55a",
+      "comment": "",
+      "command": "click",
+      "target": "id=convert-submit",
+      "targets": [
+        ["id=convert-submit", "id"],
+        ["css=#convert-submit", "css:finder"],
+        ["xpath=//input[@id='convert-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='converter']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32f6ecad-7f79-431e-9000-ba757017890b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.result-to",
+      "targets": [
+        ["css=.result-to", "css:finder"],
+        ["xpath=//form[@id='converter']/div[4]/p/span[4]", "xpath:idRelative"],
+        ["xpath=//span[4]", "xpath:position"],
+        ["xpath=//span[contains(.,'300')]", "xpath:innerText"]
+      ],
+      "value": "300"
+    }]
+  }],
+  "suites": [{
+    "id": "0499eb36-00a4-4d9f-980f-4c76b681634a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a23533fb-fb66-4021-a54f-ff3fdc2ec722"]
+  }],
+  "urls": ["https://convertlive.com/"],
+  "plugins": []
+}

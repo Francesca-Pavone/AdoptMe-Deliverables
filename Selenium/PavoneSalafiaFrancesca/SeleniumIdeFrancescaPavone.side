@@ -1,0 +1,82 @@
+{
+  "id": "ae6145a9-d5c9-40b8-b1db-2b183624cb57",
+  "version": "2.0",
+  "name": "SeleniumIdeFrancescaPavone",
+  "url": "https://www.rapidtables.com",
+  "tests": [{
+    "id": "a7d8e4ba-1a8b-4c19-9620-896da9690862",
+    "name": "testConvertCelsius",
+    "commands": [{
+      "id": "6014c59b-f596-4427-be06-909ba10dc5aa",
+      "comment": "",
+      "command": "open",
+      "target": "/convert/temperature/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fff1b323-3737-45e8-ac6b-4cf77ba4950d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76fc30f4-dd46-4d85-8fcf-8dc5277d7673",
+      "comment": "",
+      "command": "click",
+      "target": "id=cel",
+      "targets": [
+        ["id=cel", "id"],
+        ["name=cel", "name"],
+        ["css=#cel", "css:finder"],
+        ["xpath=//input[@id='cel']", "xpath:attributes"],
+        ["xpath=//div[@id='doc']/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b25dd5f3-0870-4aa7-bf93-7a189757930c",
+      "comment": "",
+      "command": "type",
+      "target": "id=cel",
+      "targets": [
+        ["id=cel", "id"],
+        ["name=cel", "name"],
+        ["css=#cel", "css:finder"],
+        ["xpath=//input[@id='cel']", "xpath:attributes"],
+        ["xpath=//div[@id='doc']/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "25.5"
+    }, {
+      "id": "99bad068-2e8d-45e0-91c5-8a2d02c1a09b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .btn",
+      "targets": [
+        ["css=tr:nth-child(3) .btn", "css:finder"],
+        ["xpath=(//input[@value='Convert'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='doc']/form/table/tbody/tr[3]/td[4]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6dc59c6-513b-4805-8ca9-b76a061ddd82",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=f",
+      "targets": [],
+      "value": "77.9"
+    }]
+  }],
+  "suites": [{
+    "id": "d32e5f43-7313-4daa-add8-e1e74aaa371f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a7d8e4ba-1a8b-4c19-9620-896da9690862"]
+  }],
+  "urls": ["https://www.rapidtables.com/"],
+  "plugins": []
+}
